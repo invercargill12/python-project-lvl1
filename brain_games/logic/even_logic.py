@@ -7,18 +7,17 @@ def is_even():
     print(f'Question: {random_number}')
     answer_select = prompt.string('Your answer: ')
     print(answer_select)
-    answer = input()
     index = 0
     winscore = 3
     congrats = print('Congratulations, {name}!')
     while index < winscore:
-        if random_number % 2 == 0 and answer.lower() == 'yes':
+        if random_number % 2 == 0 and answer_select.lower() == 'yes':
             print('Correct!')
             index = index + 1
-        elif random_number % 2 != 0 and answer.lower() == 'yes':
+        elif random_number % 2 != 0 and answer_select.lower() == 'yes':
             return print('''"yes" is wrong answer ;(. Correct answer was "no".
 Let's try again, {name}''')
-        elif random_number % 2 == 0 and answer.lower() == 'no':
+        elif random_number % 2 == 0 and answer_select.lower() == 'no':
             return print('''"no" is wrong answer ;(. Correct answer was "yes".
 Let's try again, {name}''')
         elif random_number % 2 != 0 and answer.lower() == 'no':
