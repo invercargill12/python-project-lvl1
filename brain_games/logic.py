@@ -1,5 +1,5 @@
 def logic(game):
-    question, correct_answer = game()
+    question, correct_answer = is_even()
     # шаг 1: поздороваться
     print('Welcome to the Brain Games!')
     # шаг 2: спросить имя
