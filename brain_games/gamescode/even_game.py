@@ -9,5 +9,5 @@ def is_even():
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    return random_number, correct_answer
+    return random_number, correct_answer, question
 
