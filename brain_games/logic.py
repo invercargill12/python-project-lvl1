@@ -1,5 +1,8 @@
+import prompt
+
+
 def logic(game):
-    question, correct_answer, random_number = game()
+    question, correct_answer = game()
     # шаг 1: поздороваться
     print('Welcome to the Brain Games!')
     # шаг 2: спросить имя
