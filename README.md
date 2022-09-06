@@ -4,3 +4,5 @@
 
 https://asciinema.org/a/WQvqGvGaOu1x1gA8PpsbPmvr4 - Game 1: Is That Even?
 https://asciinema.org/a/RahKrPxUca6KxVmB4Umjj64L3 - Game 2: Calculator
+https://asciinema.org/a/Cj5TRDKZ1AG5t5XXWPxPKiwo8 - Game 3: Greatest Common Divisor
+
