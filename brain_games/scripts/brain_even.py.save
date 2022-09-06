@@ -1,0 +1,11 @@
+#!/usr/bin/env/python
+
+import prompt
+from brain_games.logic.even_logic import is_even
+
+
+def main():
+    logic(is_even)
+
+if __name__ == '__main__':
+    mai
