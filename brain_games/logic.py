@@ -8,7 +8,6 @@ def logic(game):
     name = prompt.string('May I have your name? ')
     # шаг 3: поздороваться + имя
     print(f'Hello, {name}!')
-    print('Answer "yes" if the number is even, otherwise answer "no".')
     # шаг 4: задает вопрос нужной игры
     index = 0
     score = 3
