@@ -10,5 +10,3 @@ def calc():
 Question: {num_one} {operator} {num_two}''')
     correct_answer = str(eval(f'{num_one}{operator}{num_two}'))
     return question, correct_answer
-
-

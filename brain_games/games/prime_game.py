@@ -14,6 +14,7 @@ def prime_number_check():
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    question = (f'''Answer "yes" if given number is prime. Otherwise answer "no".
+    question = ('Answer "yes" if given number is prime. '
+                f'''Otherwise answer "no".
 Question: {random_number}''')
     return question, correct_answer
