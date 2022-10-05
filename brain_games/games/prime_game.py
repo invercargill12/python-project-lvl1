@@ -1,20 +1,25 @@
 from random import randint
 
 
+RANGE_START = 2
+RANGE_STEP = 1
+LOWER_LIMIT = 1
+UPPER_LIMIT = 100
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def is_prime(random_number):
-    for i in range(2, random_number, 1):
+    for i in range(RANGE_START, random_number, RANGE_STEP):
         if random_number % i == 0 or random_number == 1:
             return False
     return True
 
 
-def prime_number_check():
-    random_number = randint(1, 100)
+def get_round_data():
+    random_number = randint(LOWER_LIMIT, UPPER_LIMIT)
     if is_prime(random_number):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    question = ('Answer "yes" if given number is prime. '
-                f'''Otherwise answer "no".
-Question: {random_number}''')
+    question = random_number
     return question, correct_answer
