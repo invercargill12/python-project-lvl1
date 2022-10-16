@@ -11,11 +11,12 @@ def get_round_data():
     num_one = randint(LOWER_LIMIT, UPPER_LIMIT)
     num_two = randint(LOWER_LIMIT, UPPER_LIMIT)
     question = f'{num_one} {operator} {num_two}'
-    correct_answer = str(sum_counter(num_one, operator, num_two))
+    correct_answer = str(calculate(num_one, num_two, operator))
     return question, correct_answer
 
 
-def sum_counter(num_one, operator, num_two):
+def calculate(num_one, num_two, operator):
+
     if operator == '*':
         result = num_one * num_two
     elif operator == '+':
