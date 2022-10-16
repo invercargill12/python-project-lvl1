@@ -8,6 +8,7 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def get_round_data():
     random_number = randint(LOWER_LIMIT, UPPER_LIMIT)
+
     if is_even(random_number):
         correct_answer = 'yes'
     else:
