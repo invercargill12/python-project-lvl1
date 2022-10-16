@@ -1,17 +1,19 @@
 import prompt
+SCORE = 3
 
 
-def logic(game):
+def launch(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print(game.DESCRIPTION)
     index = 0
-    score = 3
-    while index < score:
+
+    while index < SCORE:
         question, correct_answer = game.get_round_data()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
+
         if answer == correct_answer:
             print('Correct!')
         else:
@@ -20,4 +22,5 @@ def logic(game):
             print(f'Let\'s try again, {name}!')
             return
         index = index + 1
+
     print(f'Congratulations, {name}!')
