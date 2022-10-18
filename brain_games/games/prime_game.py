@@ -1,8 +1,6 @@
 from random import randint
 
 
-RANGE_START = 2
-RANGE_STEP = 1
 LOWER_LIMIT = 1
 UPPER_LIMIT = 100
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -13,7 +11,7 @@ def is_prime(random_number):
     if random_number < 2:
         return False
 
-    for i in range(RANGE_START, random_number, RANGE_STEP):
+    for i in range(2, random_number):
         if random_number % i == 0:
             return False
 
